@@ -58,7 +58,7 @@ class FinanceTrackerApp(QMainWindow):
         
     def _createStatusBar(self):
         statusBar = self.statusBar() 
-        statusBar.showMessage("Nama Lengkap: [Isi Nama Anda] | NIM: [Isi NIM Anda]") 
+        statusBar.showMessage("Nama Lengkap: Apta Mahogra Bhamakerti | NIM: F1D022035") 
 
     def _createInputForm(self):
         formLayout = QGridLayout() 
@@ -149,6 +149,9 @@ class FinanceTrackerApp(QMainWindow):
         self.incomeButton.setStyleSheet("QPushButton {background-color: #4CAF50; color: white; padding: 8px; border-radius: 4px; font-weight: bold;} QPushButton:hover {background-color: #45a049;}")
         self.expenseButton.setStyleSheet("QPushButton {background-color: #f44336; color: white; padding: 8px; border-radius: 4px; font-weight: bold;} QPushButton:hover {background-color: #da190b;}")
         self.tableWidget.horizontalHeader().setStyleSheet("QHeaderView::section {background-color: #007BFF; color: white; padding: 4px; font-weight: bold;}")
+
+def menu_about(self):
+        QMessageBox.information(self, "Tentang", "Aplikasi Finance Tracker berguna sebagai pencatat keuangan anda sehari-hari.")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
